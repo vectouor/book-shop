@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/book.ico">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>Book shop</h1>
+        <button class="button" onclick="onAddBook()">Add book</button>
+    </header>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="book-table">
+            </tbody>
+        </table>
+        <div class="paging">
+            <button class="button" onclick="onChangePage(-1)">Prev Page</button>
+            <button class="button" onclick="onChangePage(1)">Next Page</button>
+        </div>
+    </div>
+
+    <div class="book-edit" hidden>
+        <h2>Add/Edit book</h2>
+        <div class="edit">
+            <input placeholder="book Name" type="text" class="txt-name" data-id="" />
+            <input placeholder="book Price" type="text" class="txt-price" />
+            <button class="button" onclick="onSaveBook()">Save</button>
+            <button class="button" onclick="onCloseEdit()">close</button>
+        </div>
+    </div>
+
+    <div class="modal" hidden>
+        <button onclick="onCloseModal(this)">x</button>
+        <h1>Book Details</h1>
+        <img src="" alt="">
+        <h2></h2>
+        <h4></h4>
+        <h3>Rate this book</h3>
+        <div class="value-button" class="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+        <input class="number" value="0" readonly />
+        <div class="value-button" class="increase" onclick="increaseValue()" value="Increase Value">+</div>
+    </div>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <button>+</button>
+<p>num</p>
+<button>-</button>-->

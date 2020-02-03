@@ -1,0 +1,166 @@
+/*  */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1fab89;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 200px;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(to left bottom, #FBFF94, #00A3EF);
+    background: linear-gradient(to left bottom, #FBFF94, #00A3EF);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(4, 137, 199);
+    text-decoration: solid, underline;
+}
+
+header img {
+    width: 200px;
+    float: right;
+}
+
+table {
+    background-color: #747474;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    transition: 0.3s;
+}
+
+input:focus {
+    background-color: lightcyan;
+}
+
+td,
+th {
+    background-color: #e48c5a;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.read {
+    background-color: rgb(110, 110, 218);
+}
+
+.update {
+    background-color: rgb(218, 180, 110);
+}
+
+.delete {
+    background-color: rgb(204, 97, 34);
+}
+
+.table-container button {
+    display: inline;
+}
+
+.book-table td {
+    background-color: rgb(115, 166, 184);
+    padding: 20px;
+    margin: 2px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.modal h1 {
+    color: blanchedalmond;
+    text-decoration: underline;
+}
+
+.book-edit {
+    background-color: rgb(100, 119, 145);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal {
+    background-color: rgb(52, 92, 133);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    width: 60vw;
+    margin-left: 20vw;
+    transition: background-color .5s ease-in;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid rgb(17, 13, 13);
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: rgb(124, 78, 78);
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+.decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+}
+
+.increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+}
+
+.paging {
+    text-align: center;
+}
+
+.number {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+}
+
+.edit {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+}
+
+.edit button {
+    margin: 10px;
+}
